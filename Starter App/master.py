@@ -1,7 +1,15 @@
 # Import Modules
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QVBoxLayout, QHBoxLayout
 from random import choice
+
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import (
+    QApplication,
+    QHBoxLayout,
+    QLabel,
+    QPushButton,
+    QVBoxLayout,
+    QWidget,
+)
 
 # Main App Objects and Settings
 app = QApplication([])
@@ -33,10 +41,10 @@ row3 = QHBoxLayout()
 #
 rows = [row1, row2, row3]
 
-row1.addWidget(title, alignment=Qt.AlignCenter)
+row1.addWidget(title, alignment=Qt.AlignmentFlag.AlignCenter)
 
 for text in texts:
-    row2.addWidget(text, alignment=Qt.AlignCenter)
+    row2.addWidget(text, alignment=Qt.AlignmentFlag.AlignCenter)
 
 for button in buttons:
     row3.addWidget(button)
@@ -46,18 +54,22 @@ for row in rows:
 
 window.setLayout(master_layout)
 
+
 # Create Functions
 def random_word1():
     word = choice(words)
     text1.setText(word)
 
+
 def random_word2():
     word = choice(words)
     text2.setText(word)
 
+
 def random_word3():
     word = choice(words)
     text3.setText(word)
+
 
 # Events
 button1.clicked.connect(random_word1)
