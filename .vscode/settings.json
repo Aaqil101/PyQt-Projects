@@ -1,0 +1,17 @@
+{
+    "editor.fontLigatures": false,
+    "editor.fontFamily": "JetBrainsMonoNL Nerd Font Propo", // "Consolas, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "always"
+    },
+    
+    "python.analysis.typeCheckingMode": "off",
+    "cSpell.words": [
+        "Antialiasing",
+        "qlineargradient"
+    ]
+}
