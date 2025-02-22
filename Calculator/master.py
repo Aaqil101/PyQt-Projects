@@ -1,15 +1,15 @@
 # Import Modules
 from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QDoubleValidator, QFont, QIcon
 from PyQt5.QtWidgets import (
     QApplication,
-    QWidget,
+    QGridLayout,
+    QHBoxLayout,
     QLineEdit,
     QPushButton,
-    QHBoxLayout,
     QVBoxLayout,
-    QGridLayout,
+    QWidget,
 )
-from PyQt5.QtGui import QDoubleValidator, QFont, QIcon
 
 # Main App Objects and Settings
 # Initialize the main application object
